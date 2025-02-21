@@ -1,0 +1,41 @@
+{
+  "sprint": "Planificación y Análisis (Semana 1-2)",
+  "requerimientos_funcionales": [
+    "Registro de Usuarios",
+    "Agendamiento de Citas",
+    "Gestor de Historial Médico",
+    "Notificaciones y Recordatorios",
+    "Interfaz de Administrador",
+    "Seguridad y Privacidad"
+  ],
+  "requerimientos_no_funcionales": [
+    "Usabilidad",
+    "Rendimiento",
+    "Escalabilidad",
+    "Compatibilidad",
+    "Cumplimiento de Normativas"
+  ],
+  "arquitectura": {
+    "frontend": "Flutter",
+    "backend": "Node.js y Express",
+    "base_de_datos": "MongoDB",
+    "autenticacion": "JWT",
+    "notificaciones": "Firebase Cloud Messaging"
+  },
+  "wireframes": [
+    "Pantalla de Inicio de Sesión y Registro",
+    "Dashboard del Usuario",
+    "Agendamiento de Citas",
+    "Historial Médico",
+    "Panel de Administrador"
+  ],
+  "entregables": [
+    "Documento de Requerimientos",
+    "Boceto de la Interfaz"
+  ],
+  "proximos_pasos": [
+    "Revisión de requerimientos con los involucrados",
+    "Ajustes en base a retroalimentación",
+    "Validación del diseño de arquitectura"
+  ]
+}
