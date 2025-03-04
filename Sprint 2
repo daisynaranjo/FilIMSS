@@ -1,1 +1,38 @@
+Implementar formulario de citas con los nuevos campos requeridos (NSS, clínica, localidad, horario).
+CAMPO	TIPO	VALIDACIÓN
+Nombre	Texto	Requerido
+Número de Seguro Social (NSS)	Numero de 11 dígitos 	Requerido
+Clínica	Texto/ selección	Requerido
+Localidad	Texto/ selección	Requerido
+Fecha	Date picker	Requerido
+Horario	Selección	Requerido (Horarios validos)
+Motivo de cita	Texto	Opcional
+		
+
+Validación de datos en el formulario.
+Validar en frontend (HTML/JS/React/etc.) y backend las reglas:
+1.	NSS: Solo números, 11 dígitos.
+2.	Fecha: No permitir fechas pasadas.
+3.	Horario: Debe ser uno de los horarios disponibles, según el turno del paciente y horarios laborales y disponibles.
+4.	Campos vacíos: Mostrar alertas si falta alguno.
+Almacenamiento de citas en la base de datos. (Mongo db)
+{
+  "nombre": "Fabiola Navarro Jiménez",
+  "nss": "1022-89-4408 1F1989OR",
+  "clinica": "UMF 59 Tlajomulco",
+  "localidad": "Tlajomulco Centro",
+  "fecha": "2025-03-10",
+  "horario": "09:00 - 09:30",
+  "motivo": "Consulta general por diabetes",
+  "creado_el": "28-02-2025T12:00:00Z"
+}
+
+
+	Entregable: Módulo de gestión de citas funcional.
+El módulo debe permitir:
+	Registrar nuevas citas.
+	Validar campos antes de enviar.
+	Guardar las citas en la base de datos.
+Mostrar mensajes de éxito o error.
+Listar citas ya registradas.
 
