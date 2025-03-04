@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario FILIMSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Citas Médicas</h1>
+        <form id="appointment-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nss">Número de Seguro Social (NSS):</label>
+            <input type="text" id="nss" name="nss" pattern="\d{11}" title="Debe tener 11 dígitos" required>
+
+            <label for="clinica">Clínica:</label>
+            <select id="clinica" name="clinica" required>
+                <option value="">Seleccione una clínica</option>
+                <option value="Clinica 1">Clínica 1</option>
+                <option value="Clinica 2">Clínica 2</option>
+                <option value="Clinica 3">Clínica 3</option>
+            </select>
+
+            <label for="localidad">Localidad:</label>
+            <select id="localidad" name="localidad" required>
+                <option value="">Seleccione una localidad</option>
+                <option value="Localidad A">Localidad A</option>
+                <option value="Localidad B">Localidad B</option>
+                <option value="Localidad C">Localidad C</option>
+            </select>
+
+            <label for="fecha">Fecha de Cita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Horario de Cita:</label>
+            <select id="hora" name="hora" required>
+                <option value="">Seleccione una hora</option>
+                <option value="08:00 AM">08:00 AM</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="01:00 PM">01:00 PM</option>
+                <option value="02:00 PM">02:00 PM</option>
+            </select>
+
+            <label for="motivo">Motivo de la Cita:</label>
+            <input type="text" id="motivo" name="motivo">
+
+            <button type="submit">Agendar Cita</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
