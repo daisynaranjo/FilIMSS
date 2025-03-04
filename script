@@ -1,0 +1,66 @@
+document.getElementById("appointment-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    
+    const nombre = document.getElementById("nombre").value;
+    const nss = document.getElementById("nss").value;
+    const clinica = document.getElementById("clinica").value;
+    const localidad = document.getElementById("localidad").value;
+    const fecha = document.getElementById("fecha").value;
+    const hora = document.getElementById("hora").value;
+    const motivo = document.getElementById("motivo").value;
+
+    
+    if (!nombre || !nss || !clinica || !localidad || !fecha || !hora) {
+        document.getElementById("error-message").textContent = "Todos los campos son obligatorios.";
+        return;
+    }
+
+    
+    if (!/^\d{11}$/.test(nss)) {
+        document.getElementById("error-message").textContent = "El NSS debe tener exactamente 11 dígitos.";
+        return;
+    }
+
+    
+    const today = new Date().toISOString().split("T")[0];
+    if (fecha < today) {
+        document.getElementById("error-message").textContent = "No se pueden seleccionar fechas pasadas.";
+        return;
+    }
+
+    
+    const horariosDisponibles = ["08:00 AM", "09:00 AM", "10:00 AM", "11:00 AM", "01:00 PM", "02:00 PM"];
+    if (!horariosDisponibles.includes(hora)) {
+        document.getElementById("error-message").textContent = "El horario seleccionado no es válido.";
+        return;
+    }
+
+    const cita = {
+        nombre: nombre,
+        nss: nss,
+        clinica: clinica,
+        localidad: localidad,
+        fecha: fecha,
+        hora: hora,
+        motivo: motivo,
+    };
+
+    // para backend y guardar la cita en MongoDB
+    fetch("/guardar-cita", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cita),
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert("Cita agendada con éxito.");
+        document.getElementById("appointment-form").reset();
+    })
+    .catch(error => {
+        console.error("Error al agendar la cita:", error);
+        alert("Hubo un error al agendar la cita.");
+    });
+});
