@@ -1,0 +1,49 @@
+| **Fase 4: Mejora de Interfaz y UX (Semana 7-8, Sprint 3)** |  |
+|--------------------------------|--------------------------------|
+| **Objetivos** |  |
+| • Aplicar mejoras en la interfaz de usuario. |  |
+| • Incorporar colores verde y blanco, y el logo del IMSS. |  |
+| • Optimizar la experiencia de usuario en móvil y escritorio. |  |
+| **Entregable** | Interfaz mejorada con diseño optimizado. |
+
+## Documentación del Resultado de la Reunión Retrospectiva – Sprint 3
+
+### 1. Resumen del Sprint
+| **Objetivos alcanzados** |
+|--------------------------------|
+| ✅ Aplicación de mejoras en la interfaz de usuario. |
+| ✅ Implementación de la identidad visual del IMSS (colores verde y blanco, y logo oficial). |
+| ✅ Optimización para dispositivos móviles y de escritorio. |
+| ✅ Entrega de una interfaz mejorada con diseño optimizado. |
+
+### 2. Análisis de la Retrospectiva
+#### 2.1 Aspectos Positivos
+| ✔️ Mejoras implementadas | Impacto |
+|---------------------------|---------|
+| La nueva interfaz mejoró la claridad y facilidad de uso. | Más intuitivo para los usuarios. |
+| Incorporación de colores y logo del IMSS. | Alineación con identidad visual oficial. |
+| Optimización en dispositivos móviles. | Navegación más fluida y accesible. |
+
+#### 2.2 Áreas de Mejora Identificadas
+| 🔸 Problema detectado | Posible solución |
+|----------------------|-----------------|
+| Algunos formularios necesitan ajustes en alineación y distribución. | Revisar diseño y mejorar disposición. |
+| Colores y contrastes pueden dificultar accesibilidad. | Ajustar paleta de colores y verificar accesibilidad. |
+| Falta de pruebas con usuarios para evaluar facilidad de uso. | Implementar pruebas piloto con usuarios. |
+
+## 3. Propuesta de Modificaciones y Ajustes para los Siguientes Sprints
+
+### Sprint 4: Optimización y Pruebas de Usabilidad (Semana 9-10)
+| **Objetivo** | Mejorar detalles de interfaz y realizar pruebas con usuarios para validar la experiencia de uso. |
+|-------------|--------------------------------|
+| **Tareas específicas** |  |
+| • Ajustar alineación y distribución en formularios. |  |
+| • Revisar y mejorar el contraste de elementos para accesibilidad. |  |
+| • Implementar prueba piloto con usuarios. |  |
+| • Corregir errores detectados en la prueba de usuario. |  |
+
+### Entregables
+| 📌 Entregable | Descripción |
+|--------------|------------|
+| Informe de pruebas de usabilidad. | Retroalimentación de usuarios y hallazgos. |
+| Ajustes en la interfaz. | Modificaciones basadas en resultados de pruebas. |
