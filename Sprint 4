@@ -1,0 +1,49 @@
+# Resumen del Sprint 4
+
+Este sprint se enfocó en la implementación de notificaciones y medidas de seguridad dentro de la aplicación Filimss, especialmente en el proceso de agendamiento de citas médicas. Las actividades realizadas fueron:
+
+## Tareas Realizadas:
+1. **Implementación de Alertas y Notificaciones de Éxito y Error**  
+   Se integraron alertas visuales utilizando SweetAlert para proporcionar notificaciones claras al usuario cuando se completan las acciones de agendar citas, y para alertar sobre errores en el proceso de validación de datos.
+
+2. **Permisos de Notificación del Navegador**  
+   Se configuró la solicitud de permisos para que el navegador pueda enviar notificaciones push al usuario, alertando sobre el estado de la cita, como recordatorios o confirmaciones.
+
+3. **Validaciones de Entrada en el Formulario**  
+   Se implementaron validaciones de entrada en el frontend para asegurar que los campos sean correctamente completados (NSS válido, fecha futura, horario correcto) y que el usuario reciba notificaciones en caso de error.
+
+4. **Pruebas de Notificaciones en el Navegador**  
+   Se realizaron pruebas de las notificaciones para garantizar que se muestren de forma adecuada al usuario y sean funcionales dentro del sistema.
+
+---
+
+## Análisis de la Retrospectiva
+
+Se realizó una reunión retrospectiva con el equipo para evaluar los avances y definir áreas de mejora para el próximo sprint.
+
+### Aspectos Positivos:
+- Las alertas de éxito y error con SweetAlert son claras y proporcionan una experiencia amigable al usuario.
+- La integración de las notificaciones del navegador es funcional, permitiendo alertas de citas y recordatorios.
+- Las validaciones de los formularios aseguran que los datos ingresados sean correctos antes de la confirmación.
+
+### Áreas de Mejora Identificadas:
+- Aún falta integrar completamente la funcionalidad de backend para guardar las citas en la base de datos.
+- Las pruebas de usabilidad no se han realizado, lo que deja margen para identificar posibles problemas en el uso real del sistema.
+- Los permisos de notificación podrían no funcionar en todos los navegadores o dispositivos, lo que debe ser probado en una variedad de plataformas.
+
+---
+
+## Propuesta de Modificaciones y Ajustes para los Siguientes Sprints
+
+**Sprint 5: Integración con Backend y Mejoras en Notificaciones (Semana 11-12)**  
+**Objetivo:** Completar la integración con el backend y realizar pruebas de usabilidad con los usuarios para asegurar que el sistema sea eficiente y fácil de usar.
+
+### Tareas específicas:
+- Completar la integración con MongoDB para almacenar las citas.
+- Mejorar la funcionalidad de notificaciones push, incluyendo pruebas de compatibilidad en diferentes navegadores y dispositivos.
+- Realizar ajustes de diseño en el formulario basado en comentarios de pruebas internas.
+- Ejecutar pruebas de usabilidad para detectar posibles mejoras y corregir errores.
+
+### Entregable:
+- Sistema funcional con notificaciones push completadas.
+- Informe de pruebas de usabilidad y ajustes según las recomendaciones de los usuarios.
