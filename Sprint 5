@@ -1,0 +1,52 @@
+# Resumen del Sprint 5
+
+Este sprint se enfocó en realizar las pruebas de usuario, corregir errores identificados, desplegar el sistema en un servidor para realizar pruebas finales, y documentar el sistema Filimss para su revisión final. Las actividades realizadas fueron:
+
+## Tareas Realizadas:
+1. **Pruebas de Usuario**  
+   Se realizaron pruebas con usuarios reales para evaluar la facilidad de uso, la navegación y las funcionalidades generales del sistema. Los usuarios proporcionaron retroalimentación que permitió identificar áreas de mejora, como la usabilidad de los formularios y la claridad de las notificaciones.
+
+2. **Corrección de Errores**  
+   Con base en los resultados de las pruebas de usuario, se realizaron ajustes en el sistema, corrigiendo errores de validación, mejorando la alineación de los formularios, y optimizando la respuesta del sistema a los errores de entrada.
+
+3. **Despliegue en un Servidor para Pruebas Finales**  
+   El sistema se desplegó en un servidor de pruebas para realizar un test de carga y rendimiento, así como pruebas en diferentes dispositivos y navegadores para asegurar la compatibilidad y estabilidad del sistema en un entorno de producción simulado.
+
+4. **Documentación del Sistema**  
+   Se documentó el código fuente del sistema, los procesos de instalación y configuración, así como las instrucciones para el uso del sistema. Además, se preparó una documentación con las características del sistema y los resultados obtenidos de las pruebas realizadas.
+
+5. **Optimización de Notificaciones y Seguridad**  
+   Se completaron las funcionalidades de notificación en el navegador y se implementaron medidas de seguridad adicionales para proteger los datos de los usuarios y mejorar la confiabilidad del sistema.
+
+---
+
+## Análisis de la Retrospectiva
+
+Se realizó una reunión retrospectiva con el equipo para evaluar los avances y definir áreas de mejora para el próximo sprint.
+
+### Aspectos Positivos:
+- Las pruebas de usuario proporcionaron información valiosa que permitió mejorar la interfaz y la experiencia de usuario.
+- El sistema se desplegó correctamente en un servidor de pruebas y se aseguraron su estabilidad y compatibilidad.
+- La documentación es clara y completa, permitiendo que otros desarrolladores o administradores del sistema puedan entender y mantener el sistema fácilmente.
+
+### Áreas de Mejora Identificadas:
+- Algunas funcionalidades aún necesitan ajustes para mejorar la interacción del usuario, especialmente en dispositivos móviles.
+- A pesar de las correcciones realizadas, algunas pequeñas inconsistencias en la interfaz no fueron totalmente resueltas.
+- La documentación puede ser más detallada en cuanto a las APIs utilizadas y las configuraciones del servidor.
+
+---
+
+## Propuesta de Modificaciones y Ajustes para los Siguientes Sprints
+
+**Sprint 6: Revisión Final y Despliegue en Producción (Semana 13-14)**  
+**Objetivo:** Realizar una revisión final del sistema, corregir los últimos detalles y proceder con el despliegue en producción.
+
+### Tareas específicas:
+- Ajustar los detalles de la interfaz según los últimos comentarios de las pruebas de usuario.
+- Realizar una revisión final del sistema en el entorno de producción.
+- Corregir cualquier error residual que aparezca en la versión final del sistema.
+- Proceder con el despliegue oficial del sistema Filimss.
+
+### Entregable:
+- Proyecto listo para revisión final, con todas las funcionalidades operativas.
+- Sistema documentado y desplegado en un entorno de producción.
