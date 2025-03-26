@@ -1,7 +1,47 @@
+if (Notification.permission !== "granted") {
+    Notification.requestPermission().then(permission => {
+        if (permission === "granted") {
+            console.log("Permiso para notificaciones concedido");
+        } else {
+            console.log("Permiso para notificaciones denegado");
+        }
+    });
+}
+
+// Función para mostrar la notificación
+function mostrarNotificacion(titulo, mensaje) {
+    if (Notification.permission === "granted") {
+        new Notification(titulo, {
+            body: mensaje,
+            icon: 'icono-notificacion.png', // Puedes agregar un ícono si lo deseas
+            tag: 'cita-medica', // Esto es solo un identificador único
+        });
+    }
+}
+
+// Función para programar una notificación 24 horas antes de la cita
+function programarNotificacion(fechaCita) {
+    const fechaNotificacion = new Date(fechaCita);
+    fechaNotificacion.setHours(fechaNotificacion.getHours() - 24); // 24 horas antes
+
+    const tiempoRestante = fechaNotificacion.getTime() - new Date().getTime();
+
+    if (tiempoRestante > 0) {
+        setTimeout(() => {
+            mostrarNotificacion(
+                '¡Recordatorio de Cita Médica!',
+                'Recuerda que tienes una cita médica mañana a las 9:00 AM.'
+            );
+        }, tiempoRestante);
+    } else {
+        console.log("La cita ya pasó o la notificación no se puede programar.");
+    }
+}
+
+// Agregar el evento de submit al formulario
 document.getElementById("appointment-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    
     const nombre = document.getElementById("nombre").value;
     const nss = document.getElementById("nss").value;
     const clinica = document.getElementById("clinica").value;
@@ -10,57 +50,61 @@ document.getElementById("appointment-form").addEventListener("submit", function 
     const hora = document.getElementById("hora").value;
     const motivo = document.getElementById("motivo").value;
 
-    
+    // Validaciones de los campos
     if (!nombre || !nss || !clinica || !localidad || !fecha || !hora) {
-        document.getElementById("error-message").textContent = "Todos los campos son obligatorios.";
+        Swal.fire({
+            icon: 'error',
+            title: 'Todos los campos son obligatorios.',
+            confirmButtonColor: '#dc3545', // Color rojo
+        });
         return;
     }
 
-    
     if (!/^\d{11}$/.test(nss)) {
-        document.getElementById("error-message").textContent = "El NSS debe tener exactamente 11 dígitos.";
+        Swal.fire({
+            icon: 'error',
+            title: 'El NSS debe tener exactamente 11 dígitos.',
+            confirmButtonColor: '#dc3545', // Color rojo
+        });
         return;
     }
 
-    
     const today = new Date().toISOString().split("T")[0];
     if (fecha < today) {
-        document.getElementById("error-message").textContent = "No se pueden seleccionar fechas pasadas.";
+        Swal.fire({
+            icon: 'error',
+            title: 'No se pueden seleccionar fechas pasadas.',
+            confirmButtonColor: '#dc3545', // Color rojo
+        });
         return;
     }
 
-    
     const horariosDisponibles = ["08:00 AM", "09:00 AM", "10:00 AM", "11:00 AM", "01:00 PM", "02:00 PM"];
     if (!horariosDisponibles.includes(hora)) {
-        document.getElementById("error-message").textContent = "El horario seleccionado no es válido.";
+        Swal.fire({
+            icon: 'error',
+            title: 'El horario seleccionado no es válido.',
+            confirmButtonColor: '#dc3545', // Color rojo
+        });
         return;
     }
 
-    const cita = {
-        nombre: nombre,
-        nss: nss,
-        clinica: clinica,
-        localidad: localidad,
-        fecha: fecha,
-        hora: hora,
-        motivo: motivo,
-    };
-
-    // para backend y guardar la cita en MongoDB
-    fetch("/guardar-cita", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(cita),
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert("Cita agendada con éxito.");
-        document.getElementById("appointment-form").reset();
-    })
-    .catch(error => {
-        console.error("Error al agendar la cita:", error);
-        alert("Hubo un error al agendar la cita.");
+    // Si todo está bien, muestra una notificación de éxito
+    Swal.fire({
+        icon: 'success',
+        title: 'Cita agendada con éxito.',
+        confirmButtonColor: '#28a745', // Color verde
     });
+
+    // Notificación de cita agendada
+    mostrarNotificacion(
+        '¡Cita Médica Agendada!',
+        `Tienes una cita programada para el ${fecha} a las ${hora}.`
+    );
+
+    // Programar recordatorio 24 horas antes de la cita
+    programarNotificacion(fecha);
+
+    // Resetear formulario
+    document.getElementById("appointment-form").reset();
 });
