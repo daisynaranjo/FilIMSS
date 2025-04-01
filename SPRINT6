@@ -1,0 +1,55 @@
+# Sprint Adicional para Finalización de Pendientes (Semana 13-14, Sprint 6)
+
+## Objetivo
+Este sprint se centrará en completar las tareas pendientes del Sprint 4 y 5, abordando las mejoras necesarias identificadas en la retrospectiva. Se trabajará en la optimización para dispositivos móviles, pruebas de carga, integración con la base de datos y ajustes en las notificaciones y medidas de seguridad.
+
+## Actividades Realizadas
+
+### 1. Finalización del desarrollo de la funcionalidad de notificaciones
+- Se completó la integración con el sistema de notificaciones en correo electrónico. Los usuarios ahora reciben notificaciones para recordarles sobre citas médicas programadas.
+
+### 2. Optimización del formulario de agendamiento de citas
+- Se implementaron validaciones de entrada para asegurar que todos los campos requeridos estuvieran completos.
+- Validación de formato de NSS, correo y horarios disponibles de citas.
+- Se agregó la opción para cancelar citas y recibir confirmaciones por correo electrónico.
+
+### 3. Integración de EmailJS para envío de correos electrónicos
+- Se implementó la funcionalidad para enviar correos de confirmación de cita a los usuarios mediante el servicio EmailJS. Los usuarios ahora reciben un correo de confirmación con los detalles de la cita.
+
+### 4. Pruebas de Usabilidad y Corrección de Errores
+- Se realizaron pruebas de usabilidad con usuarios para evaluar la facilidad de uso del sistema. Las pruebas ayudaron a identificar áreas clave de mejora en la interfaz y la experiencia del usuario.
+- Durante las pruebas, se corrigieron errores menores de visualización y funcionalidades.
+
+### 5. Documentación del Sistema
+- Se generó la documentación técnica completa del sistema, que abarca desde el frontend hasta el backend. Esta documentación facilita el mantenimiento del sistema y las futuras actualizaciones por parte del equipo de desarrollo.
+
+## Análisis de la Retrospectiva
+
+Se realizó una reunión retrospectiva con el equipo de desarrollo para evaluar el trabajo realizado en los sprints 4 y 5. Durante la retrospectiva, se discutieron los puntos que no fueron completados debido a dificultades y falta de tiempo. A continuación, se detallan los aspectos positivos y las áreas de mejora identificadas:
+
+### 2.1 Aspectos Positivos:
+- **Pruebas de Usabilidad**: Permitieron identificar áreas de mejora en la interfaz y la experiencia de usuario, lo que contribuirá a la mejora continua del sistema.
+- **Corrección de Errores**: Mejoró la estabilidad y la usabilidad del sistema, asegurando que el sistema funcione de manera más fluida.
+- **Despliegue en un Servidor de Pruebas**: Validó el rendimiento del sistema en condiciones más reales de uso, permitiendo detectar posibles cuellos de botella.
+- **Documentación del Sistema**: La documentación del sistema es clara y detallada, lo que facilitará su mantenimiento y futuras actualizaciones.
+- **Notificaciones**: Mejoraron la experiencia del usuario al proporcionar mensajes claros y visuales mediante SweetAlert.
+
+### 2.2 Áreas de Mejora Identificadas:
+1. **Dificultades para Conectar con la Base de Datos**: Hemos enfrentado dificultades para establecer la conexión con la base de datos, lo que ha retrasado su integración. Se priorizará la resolución de este problema en el siguiente sprint para asegurar que el sistema funcione correctamente con la base de datos.
+2. **Pruebas de Carga**: Las pruebas de carga no fueron suficientemente exhaustivas, por lo que deben corregirse en el siguiente sprint para garantizar que el sistema pueda manejar grandes volúmenes de usuarios sin comprometer el rendimiento.
+3. **Tiempo de Desarrollo Insuficiente**: El tiempo disponible para completar algunas tareas fue corto, lo que no nos permitió abordar todo lo planeado. Este es un punto a tener en cuenta para la planificación del siguiente sprint.
+
+## Conclusiones
+
+El Sprint Adicional se ha centrado en la finalización de tareas pendientes de los sprints anteriores, lo que nos ha permitido abordar aspectos clave como la integración de notificaciones, optimización del formulario de citas y la implementación de medidas de seguridad. El avance en la integración con EmailJS y la mejora en la validación de los formularios ha fortalecido la interacción con los usuarios. Además, la documentación técnica generada facilitará futuras actualizaciones y el mantenimiento del sistema.
+
+Aunque se han logrado importantes avances, aún persisten algunas áreas de mejora, como la conexión con la base de datos, las pruebas de carga y la gestión del tiempo durante el desarrollo. Estos puntos serán fundamentales para garantizar que el sistema esté completamente funcional y optimizado para su uso final.
+
+## Mejoras Propuestas para el Sprint Final
+
+1. **Resolución de la Conexión con la Base de Datos**: La prioridad para el siguiente sprint será resolver las dificultades para conectar con la base de datos. Esto garantizará la correcta integración de los datos y permitirá que el sistema funcione como se espera.
+2. **Pruebas de Carga Exhaustivas**: Es crucial realizar pruebas de carga más detalladas para validar que el sistema pueda manejar un volumen considerable de usuarios y citas sin comprometer su rendimiento. Esto asegurará que el sistema esté preparado para el uso a gran escala.
+3. **Optimización en el Desarrollo de Funcionalidades**: Debido a las limitaciones de tiempo, algunas funcionalidades aún no se completaron según lo planeado. Es necesario ajustar la planificación para dedicar el tiempo suficiente a tareas clave y evitar imprevistos que puedan retrasar el progreso.
+4. **Mejoras en la Interfaz Móvil**: Continuar con la optimización para dispositivos móviles, corrigiendo los errores de visualización que se han detectado, y asegurando que la experiencia del usuario sea consistente en todas las plataformas.
+5. **Ajuste de Notificaciones y Seguridad**: Continuar afinando las notificaciones para mejorar la claridad y visibilidad para el usuario, y reforzar las medidas de seguridad para prevenir posibles vulnerabilidades, asegurando la integridad y confidencialidad de los datos.
+6. **Mejorar la Gestión de Tiempos**: Para evitar la presión de última hora, es recomendable revisar la asignación de tiempos para tareas en el próximo sprint, priorizando las actividades más críticas y asegurando que todos los miembros del equipo estén alineados con los objetivos del sprint final.
