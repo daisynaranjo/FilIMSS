@@ -1,0 +1,48 @@
+# Sprint 7 - FILIMSS
+
+## Fecha de desarrollo
+Del 8 al 14 de abril de 2025
+
+## Objetivo del Sprint
+Desarrollar e integrar el sistema de gestión de citas médicas, conectando el frontend con el backend, incluyendo validaciones, almacenamiento en MongoDB y retroalimentación al usuario.
+
+## Actividades Realizadas
+
+1. Validación avanzada de formulario de citas:
+   - Revisión de campos requeridos
+   - Mensajes de error claros y centrados en la experiencia del usuario
+
+2. Conexión con backend (MongoDB):
+   - Implementación de lógica para guardar datos de citas
+   - Confirmación de almacenamiento correcto mediante consola y alertas visuales
+
+3. Notificación por correo electrónico:
+   - Integración con EmailJS para enviar confirmación de cita al usuario
+
+4. Pruebas funcionales:
+   - Pruebas locales para verificar flujo completo de agendamiento
+   - Ajustes en diseño responsivo para mejor visualización
+
+## Reunión Retrospectiva
+
+### Aspectos positivos
+- Mayor organización en tareas semanales
+- Claridad en los objetivos técnicos
+- Comunicación fluida durante la semana de trabajo
+
+### Aspectos por mejorar
+- Se requiere mejorar la cobertura de pruebas en diferentes dispositivos y navegadores
+- Algunos mensajes visuales de retroalimentación fueron confusos para usuarios sin experiencia
+
+## Conclusiones
+
+- El sistema de gestión de citas quedó funcional con validaciones completas y conexión al backend.
+- Se logró automatizar la notificación vía correo, mejorando la interacción con el usuario.
+- Este sprint representó una consolidación técnica del proyecto.
+
+## Modificaciones propuestas para el siguiente sprint
+
+1. Realizar pruebas multiplataforma y en distintos navegadores
+2. Usar un checklist técnico antes de marcar tareas como finalizadas
+3. Mejorar los mensajes visuales de éxito y error
+4. Preparar demo final y despliegue en entorno de producción
