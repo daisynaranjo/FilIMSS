@@ -3,7 +3,7 @@
 
 El proyecto FILIMSS tiene como objetivo optimizar la gestión y organización de citas médicas en la Unidad de Medicina Familiar No. 59 de Tlajomulco de Zúñiga, IMSS, mejorando la comunicación entre usuarios y personal médico.
 
----
+
 
 ##  Tecnologías utilizadas
 - Backend: Node.js, Express, MongoDB, EmailJS  
@@ -11,11 +11,7 @@ El proyecto FILIMSS tiene como objetivo optimizar la gestión y organización de
 - Metodología: Ágil Scrum  
 - Pruebas: Jest  
 
----
 
-
-
----
 
 ##  Estructura del desarrollo (Scrum)
 - Sprint 1: Planificación y requerimientos  
